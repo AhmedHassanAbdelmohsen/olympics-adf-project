@@ -1,0 +1,9 @@
+{
+	"name": "olympic-games",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e34b37d5-d130-48a6-9c8e-4da432315d85",
+		"tenantId": "39f3b672-2661-4dc9-943f-47d453dcb146"
+	}
+}

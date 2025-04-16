@@ -1,0 +1,32 @@
+{
+	"name": "GitHub_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_HTTP",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fullPath": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().fullPath",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": null
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
