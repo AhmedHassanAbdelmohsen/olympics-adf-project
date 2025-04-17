@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "looping1",
+				"name": "looping_test",
 				"type": "ForEach",
 				"dependsOn": [],
 				"userProperties": [],
